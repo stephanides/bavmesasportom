@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@styled-icons/bootstrap": "^10.14.1",
+    "@styled-icons/entypo": "^10.15.1",
+    "@styled-icons/entypo-social": "^10.15.1",
+    "apollo-boost": "^0.4.9",
+    "bootstrap": "^4.5.0",
+    "gql": "^1.1.2",
+    "graphql": "^15.3.0",
+    "markdown-to-jsx": "^6.11.4",
+    "next": "^9.4.4",
+    "next-apollo": "^4.0.1",
+    "next-with-apollo": "^5.1.0",
+    "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1",
+    "react-image-lightbox": "^5.1.1",
+    "reactstrap": "^8.5.1",
+    "recompose": "^0.30.0",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}

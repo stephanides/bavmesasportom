@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^21.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "strapi": "3.1.0-alpha.5",
+    "strapi-admin": "3.1.0-alpha.5",
+    "strapi-connector-mongoose": "3.1.0-alpha.5",
+    "strapi-plugin-content-manager": "3.1.0-alpha.5",
+    "strapi-plugin-content-type-builder": "3.1.0-alpha.5",
+    "strapi-plugin-email": "3.1.0-alpha.5",
+    "strapi-plugin-graphql": "3.1.0-alpha.5",
+    "strapi-plugin-upload": "3.1.0-alpha.5",
+    "strapi-plugin-users-permissions": "3.1.0-alpha.5",
+    "strapi-utils": "3.1.0-alpha.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b9f2389f-981e-4f3c-97ee-40cae2bed109"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

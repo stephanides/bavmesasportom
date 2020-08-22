@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Events"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "organizator": {
+      "type": "string"
+    },
+    "dateStart": {
+      "type": "datetime"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "register": {
+      "type": "string"
+    }
+  }
+}
