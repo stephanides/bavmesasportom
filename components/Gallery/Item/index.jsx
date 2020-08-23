@@ -18,7 +18,9 @@ const Item = ({ data }) => {
       <Col lg={4} className="mb-40">
         <Card className="vertical_between">
           <EventTitle>{data.title}</EventTitle>
-          <GalleryImage src={`http://localhost:1337${data.background.url}`} />
+          <GalleryImage
+            src={`https://admin.bavmesasportom.sk${data.background.url}`}
+          />
           <ActionButton onClick={() => setIsOpen(true)}>
             Otvoriť galériu
           </ActionButton>
@@ -26,11 +28,11 @@ const Item = ({ data }) => {
       </Col>
       {isOpen && (
         <Lightbox
-          mainSrc={`http://localhost:1337${data.photos[photoIndex].url}`}
-          nextSrc={`http://localhost:1337${
+          mainSrc={`https://admin.bavmesasportom.sk${data.photos[photoIndex].url}`}
+          nextSrc={`https://admin.bavmesasportom.sk${
             data.photos[(photoIndex + 1) % data.photos.length].url
           }`}
-          prevSrc={`http://localhost:1337${
+          prevSrc={`https://admin.bavmesasportom.sk${
             data.photos[
               (photoIndex + data.photos.length - 1) % data.photos.length
             ].url

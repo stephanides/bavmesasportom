@@ -31,8 +31,8 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta title="Bavme sa športom" />
-        <meta description="" />
-        <meta keywords="Volejbal, lubmix, turnaj, unifikovaný, mikasa, lopta, šport, bavme, sa, športom" />
+        <meta description="Sme občianske združenie, ktoré tvoria mladí ľudia zo Starej Ľubovne a ktorí sú zanietení športom. V meste Stará Ľubovňa organizujeme viacero športových podujatí (volejbalový turnaj MIX Stará Ľubovňa, beachvolejbalový turnaj MIX Stará Ľubovňa ako aj ples volejbalistov. " />
+        <meta keywords="Volejbal, lubmix, turnaj, unifikovaný, mikasa, lopta, šport, bavme, sa, športom, beach" />
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
             <Nav className="ml-auto">
               {router.pathname === "/" ? (
                 <>
-                  <NavItem onClick={toggle}>
+                  <NavItem className="desktop">
                     <AnchorLink
                       offset="100"
                       className="nav-link"
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
                       News
                     </AnchorLink>
                   </NavItem>
-                  <NavItem onClick={toggle}>
+                  <NavItem className="desktop">
                     <AnchorLink
                       offset="100"
                       className="nav-link"
@@ -84,7 +84,7 @@ const Layout = ({ children }) => {
                       Events
                     </AnchorLink>
                   </NavItem>
-                  <NavItem onClick={toggle}>
+                  <NavItem className="desktop">
                     <AnchorLink
                       offset="100"
                       className="nav-link"
@@ -93,7 +93,43 @@ const Layout = ({ children }) => {
                       Gallery
                     </AnchorLink>
                   </NavItem>
-                  <NavItem onClick={toggle}>
+                  <NavItem className="desktop">
+                    <AnchorLink
+                      offset="100"
+                      className="nav-link"
+                      href="#contact"
+                    >
+                      Contact
+                    </AnchorLink>
+                  </NavItem>
+                  <NavItem onClick={toggle} className="mobile">
+                    <AnchorLink
+                      offset="100"
+                      className="nav-link"
+                      href="#events"
+                    >
+                      News
+                    </AnchorLink>
+                  </NavItem>
+                  <NavItem onClick={toggle} className="mobile">
+                    <AnchorLink
+                      offset="100"
+                      className="nav-link"
+                      href="#projects"
+                    >
+                      Events
+                    </AnchorLink>
+                  </NavItem>
+                  <NavItem onClick={toggle} className="mobile">
+                    <AnchorLink
+                      offset="100"
+                      className="nav-link"
+                      href="#gallery"
+                    >
+                      Gallery
+                    </AnchorLink>
+                  </NavItem>
+                  <NavItem onClick={toggle} className="mobile">
                     <AnchorLink
                       offset="100"
                       className="nav-link"

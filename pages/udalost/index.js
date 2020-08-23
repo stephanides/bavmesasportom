@@ -61,7 +61,7 @@ const UdalostDetail = () => {
         <h4 className="mb-4">{`Organizátor: ${event.organizator}`}</h4>
         <img
           className="w-100"
-          src={`http://localhost:1337${event.image.url}`}
+          src={`https://admin.bavmesasportom.sk${event.image.url}`}
         />
       </Container>
     </Layout>

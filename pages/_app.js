@@ -31,6 +31,7 @@ class MyApp extends App {
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <ApolloProvider client={apollo}>
           <Style />

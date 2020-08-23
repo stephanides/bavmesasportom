@@ -28,7 +28,9 @@ const Event = ({ data }) => {
       <Row>
         <Col lg="3" className="vertical_center">
           <Link href={{ pathname: "/udalost", query: { id: data._id } }}>
-            <EventImg url={`http://localhost:1337${data.image.url}`} />
+            <EventImg
+              url={`https://admin.bavmesasportom.sk${data.image.url}`}
+            />
           </Link>
         </Col>
         <Col lg="5" className="vertical_center mobile-col">

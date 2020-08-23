@@ -45,7 +45,6 @@ const PodujatieDetail = () => {
   }
 
   const { project } = data;
-  console.log(project);
 
   return (
     <Layout>
@@ -56,7 +55,7 @@ const PodujatieDetail = () => {
         />
         <img
           className="w-100"
-          src={`http://localhost:1337${project.image.url}`}
+          src={`https://admin.bavmesasportom.sk${project.image.url}`}
         />
       </Container>
     </Layout>

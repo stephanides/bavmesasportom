@@ -38,12 +38,16 @@ const Sponsors = () => {
           <div className="sponsors_holder">
             {sponsors[0].sponsors_main.map((res, i) => (
               <div key={i}>
-                <LogoSmallImg src={`http://localhost:1337${res.url}`} />
+                <LogoSmallImg
+                  src={`https://admin.bavmesasportom.sk${res.url}`}
+                />
               </div>
             ))}
             {sponsors[0].sponsors_rest.map((res, i) => (
               <div key={i}>
-                <LogoSmallImg src={`http://localhost:1337${res.url}`} />
+                <LogoSmallImg
+                  src={`https://admin.bavmesasportom.sk${res.url}`}
+                />
               </div>
             ))}
           </div>

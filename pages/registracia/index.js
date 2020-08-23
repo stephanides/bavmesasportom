@@ -44,12 +44,21 @@ const UdalostDetail = () => {
   const { event } = data;
   return (
     <Layout>
-      <Container className="text-center">
+      <Container
+        style={{ minHeight: "calc(100vh - 294px)" }}
+        className="text-center"
+      >
         <SubPageTitle>{event.title}</SubPageTitle>
         <SubPageTitle className="mt-2 pt-0">Registrácia</SubPageTitle>
-        <RegisterHolder
-          dangerouslySetInnerHTML={createMarkup(event.register)}
-        />
+        {event.register ? (
+          <RegisterHolder
+            dangerouslySetInnerHTML={createMarkup(event.register)}
+          />
+        ) : (
+          <SubPageTitle className="mt-2 pt-0">
+            Ľutujeme, registrácia je ukončená.
+          </SubPageTitle>
+        )}
       </Container>
     </Layout>
   );

@@ -75,10 +75,9 @@ export const Overlay = styled.div`
 `;
 export const Player = styled.img`
   position: absolute;
-  right: 2rem;
-  transform: scaleX(-1);
+  right: 6rem;
   bottom: 0;
-  max-height: 100%;
+  max-height: calc(100% - 20px);
   display: block;
   @media (max-width: 992px) {
     display: none;
@@ -445,6 +444,12 @@ export default createGlobalStyle`
     display: none;
     @media(max-width: 768px){
       display: block;
+    }
+  }
+  .desktop{
+    display: block;
+    @media(max-width: 768px){
+      display: none;
     }
   }
   .nav{
