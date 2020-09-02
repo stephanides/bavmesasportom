@@ -14,6 +14,7 @@ import {
 } from "../../../shared/global.style";
 import formatDate from "../../../../helpers";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { adminURL } from "../../../shared/configUrl";
 
 const Event = ({ data }) => {
   console.log(data);
@@ -28,9 +29,7 @@ const Event = ({ data }) => {
       <Row>
         <Col lg="3" className="vertical_center">
           <Link href={{ pathname: "/udalost", query: { id: data._id } }}>
-            <EventImg
-              url={`https://admin.bavmesasportom.sk${data.image.url}`}
-            />
+            <EventImg url={`${adminURL}${data.image.url}`} />
           </Link>
         </Col>
         <Col lg="5" className="vertical_center mobile-col">

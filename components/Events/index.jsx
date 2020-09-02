@@ -1,5 +1,5 @@
 import React from "react";
-import { H2 } from "../shared/global.style";
+import { H2, NewsTitle } from "../shared/global.style";
 import { Container, Spinner } from "reactstrap";
 import { useQuery } from "@apollo/react-hooks";
 import Event from "./components/Event";
@@ -39,9 +39,13 @@ const Events = () => {
     <div id="events">
       <Container>
         <H2 className="mt-4">Nadchadzajúce udalosti</H2>
-        {events.map((res) => (
-          <Event key={res._id} data={res} />
-        ))}
+        {events.length > 0 ? (
+          events.map((res) => <Event key={res._id} data={res} />)
+        ) : (
+          <NewsTitle>
+            Momentálne nie sú žiadne nadchadzajúce udalosti.{" "}
+          </NewsTitle>
+        )}
       </Container>
     </div>
   );

@@ -9,6 +9,7 @@ import {
   SubPageTitle,
   SubPageText,
 } from "../../components/shared/global.style";
+import { adminURL } from "../../components/shared/configUrl";
 
 const podujatie_query = gql`
   query project($id: ID!) {
@@ -53,10 +54,7 @@ const PodujatieDetail = () => {
         <SubPageText
           dangerouslySetInnerHTML={createMarkup(project.description)}
         />
-        <img
-          className="w-100"
-          src={`https://admin.bavmesasportom.sk${project.image.url}`}
-        />
+        <img className="w-100" src={`${adminURL}${project.image.url}`} />
       </Container>
     </Layout>
   );

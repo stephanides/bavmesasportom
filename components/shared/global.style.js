@@ -205,6 +205,9 @@ export const EventWrapper = styled.div`
     box-shadow: 3px 12px 30px rgba(22, 19, 98, 0.25);
     border: 2px solid transparent;
   }
+  @media (max-width: 576px) {
+    padding: 20px 10px;
+  }
 `;
 
 export const EventImg = styled.div`
@@ -280,6 +283,31 @@ export const GalleryImage = styled.img`
   border-radius: 4px;
 `;
 
+export const DetailGalleryImageWrapper = styled.div`
+  overflow: hidden;
+`;
+
+export const DetailGalleryImage = styled.img`
+  width: 100%;
+  border-radius: 4px;
+  float: left;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 1200px) {
+    height: 140px;
+  }
+  @media (max-width: 768px) {
+    height: 240px;
+  }
+`;
+
 export const FooterWrapper = styled.div`
   background: rgba(22, 19, 98, 1);
   width: 100%;
@@ -308,7 +336,7 @@ export const SubPageTitle = styled.h1`
   color: rgba(22, 19, 98, 1);
   font-weight: bold;
   font-size: 2.5rem;
-  margin-top: 100px;
+  margin-top: 120px;
 `;
 
 export const SubPageText = styled.p`
@@ -320,8 +348,14 @@ export const SubPageText = styled.p`
 `;
 
 export const LogoImg = styled.img`
-  width: 300px;
+  max-width: 400px;
+  margin: 1rem auto;
   margin: 1rem;
+  width: 100%;
+  @media (max-width: 576px) {
+    margin: 0;
+    padding: 1rem;
+  }
 `;
 export const LogoSmallImg = styled.img`
   width: 150px;

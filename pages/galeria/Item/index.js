@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
-import gql from "graphql-tag";
+import React, { useState } from "react";
 import { Col } from "reactstrap";
 import {
   EventTitle,
-  Button,
   Card,
   GalleryImage,
-} from "../../shared/global.style";
-import { adminURL } from "../../shared/configUrl";
+  Button,
+} from "../../../components/shared/global.style";
+import { adminURL } from "../../../components/shared/configUrl";
 import Link from "next/link";
 
 const Item = ({ data }) => {

@@ -37,6 +37,9 @@
     },
     "register": {
       "type": "string"
+    },
+    "teams": {
+      "type": "richtext"
     }
   }
 }
